@@ -1,0 +1,27 @@
+/* tablet & mobile */
+@media (max-width: 1024px) {
+    .header {
+        display: none;
+    }
+
+    .main {
+        padding: 0;
+    }
+
+    .main__header {
+        left: 20px;
+    }
+
+    .main__header-left,
+    .main__header-right {
+        gap: 10px;
+    }
+}
+/* tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+
+}
+/* mobile */
+@media (max-width: 739px) {
+
+}

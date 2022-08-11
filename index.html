@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./assets/css/base.css" />
+        <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css">
+        <link rel="stylesheet" href="./assets/css/style.css" />
+        <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.css"
+            integrity="sha512-9nqhm3FWfB00id4NJpxK/wV1g9P2QfSsEPhSSpT+6qrESP6mpYbTfpC+Jvwe2XY27K5mLwwrqYuzqMGK5yC9/Q=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+</head>
+<body>
+    <header class="header">
+        <div class="header__brand">
+            <div><img src="./assets/img/netflix.png" alt="" /></div>
+            <div><img src="./assets/img/hulu.png" alt="" /></div>
+            <div><img src="./assets/img/apple-tv.png" alt="" /></div>
+            <div><img src="./assets/img/disney.jpg" alt="" /></div>
+            <div><img src="./assets/img/HBO max.png" alt="" /></div>
+            <div><i class="fa-solid fa-circle-plus"></i></div>
+        </div>
+        <div class="header__navBar">
+            <ul class="navBar navBar__menu">
+                <h2>MENU</h2>
+                <li class="active">
+                    <a href="">
+                        <i class="fa-solid fa-house"></i>
+                        <span>Home</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <i class="fa-solid fa-compass"></i>
+                        <span>Discovery</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <i class="fa-solid fa-users"></i>
+                        <span>Community</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <i class="fa-solid fa-bell"></i>
+                        <span>Coming soon</span>
+                        <div class="navBar__notify">2</div>
+                    </a>
+                </li>
+            </ul>
+            <ul class="navBar navBar__library">
+                <h2>LIBRARY</h2>
+                <li>
+                    <a href="">
+                        <i class="fa-solid fa-clock"></i>
+                        <span>Recent</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <i class="fa-solid fa-bookmark"></i>
+                        <span>Bookmark</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <i class="fa-solid fa-star"></i>
+                        <span>Top Rated</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <i class="fa-solid fa-cloud-arrow-down"></i>
+                        <span>Download</span>
+                    </a>
+                </li>
+            </ul>
+            <ul class="navBar navBar__settings">
+                <li>
+                    <a href="">
+                        <i class="fa-solid fa-gear"></i>
+                        <span>Setting</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <i class="fa-solid fa-circle-info"></i>
+                        <span>Help</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <div class="main">
+        <div class="main__header">
+            <div class="main__header-left">
+                <a href="" class="header-left__item">Movies</a>
+                <a href="" class="header-left__item">Series</a>
+                <a href="" class="header-left__item">TV Shows</a>
+            </div>
+            <div class="main__header-right">
+                <a href="" class="header-right__item premium-item">Premium</a>
+                <a href="" class="header-right__item">Support</a>
+                <a href="" class="header-right__item">Sign up</a>
+                <a href="" class="header-right__item">Sign in</a>
+            </div>
+        </div>
+        <div id="above">
+            <div class="left-bar">
+                <div class="top-bar">
+                        <div class="left">
+                            <h1 class="tittle">Your Watchlist</h1>
+                            <div class="private">
+                                <span><i class="fa-solid fa-unlock-keyhole"></i></span>
+                                <h4>PRIVATE</h4>
+                                
+                            </div>
+                        </div>
+                        <div class="right">
+                            <div class="edit">
+                                <span class="icon-edit">
+                                    <i class="fa-solid fa-pen" class="effect"></i>
+                                    <h4>EDIT</h4>
+                                </span>
+                            </div>
+                            <div class="share">
+                                <span class="icon-share">
+                                    <i class="fa-solid fa-share-nodes"></i>
+                                    <h4>SHARE</h4>
+                                </span>
+                            </div>
+                        </div>
+                </div>
+                <div class="mid-bar">
+                    <div class="word">0 Titles</div>
+                    <div class="listOrder">
+                        <div class="lister-sort-by-container">
+                            <label class="lister-sort-by-label" for="lister-sort-by-options">
+                              Sort by:
+                            </label>
+                            <select id="lister-sort-by-options" class="lister-sort-by">
+                              <option value="LIST_ORDER">List Order</option>
+                              <option value="ALPHA">Alphabetical</option>
+                              <option value="USER_RATING">IMDb Rating</option>
+                              <option value="MOVIEMETER">Popularity</option>
+                              <option value="YOUR_RATING">Your Rating</option>
+                              <option value="NUM_VOTES">Number of Ratings</option>
+                              <option value="RELEASE_DATE">Release Date</option>
+                              <option value="RUNTIME">Runtime</option>
+                              <option value="DATE_ADDED">Date Added</option>
+                            </select>
+                          </div>
+                          
+                    </div>
+                    <div class="grid-view">
+                        <i id="grid" class="fa-solid fa-grip"></i>
+                        <i id="list" class="fa-solid fa-list-check"></i>
+                      </div>
+                      <button class="refine">REFINE
+                      </button>
+                </div>
+                <div class="bot-bar">
+                    
+                    <div class="watch-list" id="watch-list">
+                        <div class="list__film">
+                            <ul class="blockbuster__list">
+                                
+                                <li class="blockbuster__item" id="film__1">
+                                    <div class="blockbuster__item-overlay">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                    </div>
+                                    <div class="blockbuster__item-tag">HD Vietsub</div>
+                                    <div class="blockbuster__item-img">
+                                        <img src="./assets/trending/FantasticBeasts.jpg" alt="">
+                                    </div>
+                                    <div class="blockbuster__item-content">
+                                        <h2>Phù Thủy Tối Thượng Trong Đa Vũ Trụ Hỗn Loạn</h2>
+                                        <h3>Doctor Strange in the Multiverse of Madness (2022)</h3>
+                                    </div>
+                                </li>
+                                <li class="blockbuster__item">
+                                    <div class="blockbuster__item-overlay">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                    </div>
+                                    <div class="blockbuster__item-tag">HD Vietsub</div>
+                                    <div class="blockbuster__item-img">
+                                        <img src="./assets/trending/JurassicWorld.jpg" alt="">
+                                    </div>
+                                    <div class="blockbuster__item-content">
+                                        <h2>Phù Thủy Tối Thượng Trong Đa Vũ Trụ Hỗn Loạn</h2>
+                                        <h3>Doctor Strange in the Multiverse of Madness (2022)</h3>
+                                    </div>
+                                </li>
+                                <li class="blockbuster__item">
+                                    <div class="blockbuster__item-overlay">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                    </div>
+                                    <div class="blockbuster__item-tag">HD Vietsub</div>
+                                    <div class="blockbuster__item-img">
+                                        <img src="./assets/trending/Kingsman.jpg" alt="">
+                                    </div>
+                                    <div class="blockbuster__item-content">
+                                        <h2>Phù Thủy Tối Thượng Trong Đa Vũ Trụ Hỗn Loạn</h2>
+                                        <h3>Doctor Strange in the Multiverse of Madness (2022)</h3>
+                                    </div>
+                                </li>
+                                <li class="blockbuster__item">
+                                    <div class="blockbuster__item-overlay">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                    </div>
+                                    <div class="blockbuster__item-tag">HD Vietsub</div>
+                                    <div class="blockbuster__item-img">
+                                        <img src="./assets/trending/Matrix.jpg" alt="">
+                                    </div>
+                                    <div class="blockbuster__item-content">
+                                        <h2>Phù Thủy Tối Thượng Trong Đa Vũ Trụ Hỗn Loạn</h2>
+                                        <h3>Doctor Strange in the Multiverse of Madness (2022)</h3>
+                                    </div>
+                                </li>
+                                <li class="blockbuster__item">
+                                    <div class="blockbuster__item-overlay">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                    </div>
+                                    <div class="blockbuster__item-tag">HD Vietsub</div>
+                                    <div class="blockbuster__item-img">
+                                        <img src="./assets/trending/minions.jpg" alt="">
+                                    </div>
+                                    <div class="blockbuster__item-content">
+                                        <h2>Phù Thủy Tối Thượng Trong Đa Vũ Trụ Hỗn Loạn</h2>
+                                        <h3>Doctor Strange in the Multiverse of Madness (2022)</h3>
+                                    </div>
+                                </li>
+                                <li class="blockbuster__item">
+                                    <div class="blockbuster__item-overlay">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                    </div>
+                                    <div class="blockbuster__item-tag">HD Vietsub</div>
+                                    <div class="blockbuster__item-img">
+                                        <img src="./assets/trending/Morbius.jpg" alt="">
+                                    </div>
+                                    <div class="blockbuster__item-content">
+                                        <h2>Phù Thủy Tối Thượng Trong Đa Vũ Trụ Hỗn Loạn</h2>
+                                        <h3>Doctor Strange in the Multiverse of Madness (2022)</h3>
+                                    </div>
+                                </li>
+                                <li class="blockbuster__item">
+                                    <div class="blockbuster__item-overlay">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                    </div>
+                                    <div class="blockbuster__item-tag">HD Vietsub</div>
+                                    <div class="blockbuster__item-img">
+                                        <img src="./assets/trending/Sing2.jpg" alt="">
+                                    </div>
+                                    <div class="blockbuster__item-content">
+                                        <h2>Phù Thủy Tối Thượng Trong Đa Vũ Trụ Hỗn Loạn</h2>
+                                        <h3>Doctor Strange in the Multiverse of Madness (2022)</h3>
+                                    </div>
+                                </li>
+                                <li class="blockbuster__item">
+                                    <div class="blockbuster__item-overlay">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                    </div>
+                                    <div class="blockbuster__item-tag">HD Vietsub</div>
+                                    <div class="blockbuster__item-img">
+                                        <img src="./assets/trending/sonic.jpg" alt="">
+                                    </div>
+                                    <div class="blockbuster__item-content">
+                                        <h2>Phù Thủy Tối Thượng Trong Đa Vũ Trụ Hỗn Loạn</h2>
+                                        <h3>Doctor Strange in the Multiverse of Madness (2022)</h3>
+                                    </div>
+                                </li>
+                                <li class="blockbuster__item">
+                                    <div class="blockbuster__item-overlay">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                    </div>
+                                    <div class="blockbuster__item-tag">HD Vietsub</div>
+                                    <div class="blockbuster__item-img">
+                                        <img src="./assets/trending/spiderman.jpg" alt="">
+                                    </div>
+                                    <div class="blockbuster__item-content">
+                                        <h2>Phù Thủy Tối Thượng Trong Đa Vũ Trụ Hỗn Loạn</h2>
+                                        <h3>Doctor Strange in the Multiverse of Madness (2022)</h3>
+                                    </div>
+                                </li>
+                                <li class="blockbuster__item">
+                                    <div class="blockbuster__item-overlay">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                    </div>
+                                    <div class="blockbuster__item-tag">HD Vietsub</div>
+                                    <div class="blockbuster__item-img">
+                                        <img src="./assets/trending/thor4.jpg" alt="">
+                                    </div>
+                                    <div class="blockbuster__item-content">
+                                        <h2>Phù Thủy Tối Thượng Trong Đa Vũ Trụ Hỗn Loạn</h2>
+                                        <h3>Doctor Strange in the Multiverse of Madness (2022)</h3>
+                                    </div>
+                                </li>
+                                <li class="blockbuster__item">
+                                    <div class="blockbuster__item-overlay">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                    </div>
+                                    <div class="blockbuster__item-tag">HD Vietsub</div>
+                                    <div class="blockbuster__item-img">
+                                        <img src="./assets/trending/Transylvania.jpg" alt="">
+                                    </div>
+                                    <div class="blockbuster__item-content">
+                                        <h2>Phù Thủy Tối Thượng Trong Đa Vũ Trụ Hỗn Loạn</h2>
+                                        <h3>Doctor Strange in the Multiverse of Madness (2022)</h3>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <span class="image"><i class="fa-solid fa-plus"></i></span>
+                        <br>
+                        <span class="text">  Your Watchlist is empty</span>
+                        <br>
+                        <div class="text-2">Add movies and shows to your Watchlist to keep track of what you want to watch.</div>
+                        <br>
+                        <a class="link1" href="">Browse Popular Movies</a>
+                        <a href="" class="link2">Browse Popular TV Shows</a>
+                      </div>
+                  
+                </div>
+            </div>
+            <div class="right-bar">
+            <div class="right-header">
+                        <h3 class="tittle">Create a new list
+                        </h3>
+                        <br>
+                        <h4 class="tittle-2">List your movie, TV & celevrity picks.</h4>
+                        <br>
+                        <ul class="list__film">
+                            <li>
+                                <img id="movie__1" src="./assets/trending/DoctorStrange.jpg" alt="">
+                                <span id="text__1">Doctor Strange in the Multiverse of Madness (2022)</span>
+                            </li>
+                            <li>
+                                <img id="movie__1" src="./assets/trending/FantasticBeasts.jpg" alt="">
+                                <span id="text__1">Fantastic Beasts: The Secrets of Dumbledore</span>
+                            </li>
+                            <li>
+                                <img id="movie__1" src="./assets/trending/minions.jpg" alt="">
+                                <span id="text__1"> Despicable Me 3 (2017)</span>
+                            </li>
+                            <li>
+                                <img id="movie__1" src="./assets/trending/Matrix.jpg" alt="">
+                                <span id="text__1">The Matrix Resurrections (2021)</span>
+                            </li>
+                            <li>
+                                <img id="movie__1" src="./assets/trending/JurassicWorld.jpg" alt="">
+                                <span id="text__1">Jurassic World: Dominion</span>
+                            </li>
+                            <li>
+                                <img id="movie__1" src="./assets/trending/thor4.jpg" alt="">
+                                <span id="text__1">Thor: Love and Thunder (2022)</span>
+                            </li>
+                        </ul>
+                        <a href="" class="link">Create a new list</a>
+                    </div>
+            </div>
+        </div>
+        <div class="bottom">
+            <h3 class="text">Recently Viewed</h3>
+            <div class="link">
+                <a href="">Clear your history</a>
+            </div>
+        </div>
+        <!-- <div class="bouncing-loader">
+            <img src="./assets/trending/DoctorStrange.jpg" alt="">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div> -->
+    </div>
+    
+
+
+    
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="./main.js"></script>
+</body>
+</html>
